@@ -25,7 +25,7 @@ export class SoftwareSkillComponent implements OnInit {
         fontAwesomeClassname: "fab fa-js"
       },
       {
-        skillName: "Angularjs",
+        skillName: "Angular",
         fontAwesomeClassname: "fab fa-angular"
       },
       {
