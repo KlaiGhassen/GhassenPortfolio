@@ -50,6 +50,7 @@
     "@types/jasmine": "~3.5.0",
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "^12.11.1",
+    "angular-cli-ghpages": "^1.0.0",
     "apollo-codegen": "^0.20.2",
     "codelyzer": "^6.0.0-next.1",
     "jasmine-core": "~3.5.0",
