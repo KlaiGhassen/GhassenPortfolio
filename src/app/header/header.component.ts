@@ -42,8 +42,30 @@ import {animate, group, query, state, style, transition, trigger} from "@angular
     ])
   ]
 })
-export class HeaderComponent implements OnInit {
 
+
+export class HeaderComponent implements OnInit {
+flagCodes = {
+    fr: 'fr',
+    en: 'en',
+    ar: 'ar',
+};
+  availableLangs  = [
+    {
+        id   : 'en',
+        label: 'English'
+    },
+    {
+        id   : 'fr',
+        label: 'French'
+    },
+   
+    {
+        id   : 'ar',
+        label: 'العربية'
+    }
+]
+  activeLang;
   constructor() { }
   greeting= {
     username: "Klai Ghassen",
@@ -53,6 +75,16 @@ export class HeaderComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    this.activeLang=localStorage.getItem("lang")
   }
+
+
+  setActiveLang(lang: string): void {
+    // Set the active lang
+    if(lang != this.activeLang)
+    {  this.activeLang=lang;
+      localStorage.setItem('lang', lang);
+    window.location.reload();}
+}
 
 }

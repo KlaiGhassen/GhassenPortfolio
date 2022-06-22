@@ -2,7 +2,7 @@
   <header class="header" wmAnimate="landing" aos speed="normal">
     <a href="" class="logo">
       <span class="grey-color"> &lt;</span>
-      <span class="logo-name">{{greeting.username}}</span>
+      <span class="logo-name">{{ greeting.username | translate }}</span>
       <span class="grey-color">/&gt;</span>
     </a>
     <input class="menu-btn" type="checkbox" id="menu-btn" />
@@ -11,23 +11,81 @@
     </label>
     <ul class="menu">
       <li>
-        <a href="#skills">About</a>
+        <!-- Button -->
+        <button 
+        matTooltip="Change language "
+
+        [matMenuTriggerFor]="languages">
+          <ng-container
+            *ngTemplateOutlet="flagImage; context: { $implicit: activeLang }"
+          ></ng-container>
+        </button>
+        <!-- Language menu -->
+<mat-menu [xPosition]="'before'" #languages="matMenu">
+  <div *ngFor="let lang of availableLangs">
+    <button mat-menu-item (click)="setActiveLang(lang.id)">
+      <span class="flex items-center">
+        <ng-container
+          *ngTemplateOutlet="flagImage; context: { $implicit: lang.id }"
+        ></ng-container>
+        <span class="ml-3">{{ lang.label }}</span>
+      </span>
+    </button>
+  </div>
+</mat-menu>
+
+<!-- Flag image template -->
+<ng-template let-lang #flagImage>
+  <span class="relative w-6 shadow rounded-sm overflow-hidden">
+    <span
+      class="absolute inset-0 ring-1 ring-inset ring-black ring-opacity-10"
+    ></span>
+    <img
+      class="w-full"
+      [src]="'assets/images/flags/' +  flagCodes[lang] + '.svg'"
+      [alt]="'Flag image for ' + lang"
+    />
+  </span>
+</ng-template>
+
       </li>
       <li>
-        <a href="#skills">Skills</a>
+        <a 
+        matTooltip="navigate to About Me"
+
+        href="#skills">About</a>
       </li>
       <li>
-        <a href="#education">Education</a>
+        <a 
+        matTooltip="navigate to Skills"
+
+        href="#skills">Skills</a>
+      </li>
+      <li>
+        <a 
+        
+        matTooltip="navigate to Education"
+
+        href="#education">Education</a>
       </li>
       <!-- <li>
         <a href="#projects">Projects</a>
       </li> -->
       <li>
-        <a href="#experience">Experiences</a>
+        <a
+        matTooltip="navigate to Experiences"
+
+        href="#experience">Experiences</a>
       </li>
       <li>
-        <a href="#contact">Contact Me</a>
+        <a 
+        matTooltip="navigate to ContactMe"
+
+        href="#contact">Contact Me</a>
       </li>
     </ul>
   </header>
 </div>
+
+
+
