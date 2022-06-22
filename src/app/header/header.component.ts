@@ -75,7 +75,7 @@ flagCodes = {
   }
 
   ngOnInit(): void {
-    this.activeLang=localStorage.getItem("lang")
+    this.activeLang=localStorage.getItem("lang") || "en";
   }
 
 
