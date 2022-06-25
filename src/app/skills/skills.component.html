@@ -1,15 +1,15 @@
 
-<div class="main" id="skills">
+<div class="main" id="skills" [ngClass]="activeLang=='ar'?'rtl':'ltr'">
   <div class="skills-main-div">
       <div class="skills-image-div" wmAnimate="fadeInRight"  speed="normal">
         <img alt="Ghassen Working" src="assets/images/developerActivity.svg" class="skills-image-div">
       </div>
       <div class="skills-text-div" wmAnimate="fadeInLeft"  speed="normal">
-        <h1 class="skills-heading">{{skillsSection.title}}</h1>
-        <p class="subTitle skills-text-subtitle">{{skillsSection.subTitle}}
+        <h1 class="skills-heading">{{skillsSection.title | translate}}</h1>
+        <p class="subTitle skills-text-subtitle">{{skillsSection.subTitle | translate}}
           <app-software-skill></app-software-skill>
         <div *ngFor="let skill of skillsSection.skills">
-          <p class="subTitle skills-text">{{skill}}</p>
+          <p class="subTitle skills-text">{{skill | translate}}</p>
         </div>
       </div>
 <!--    </Fade>-->

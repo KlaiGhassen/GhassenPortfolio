@@ -42,6 +42,7 @@ import {animate, state, style, transition, trigger} from "@angular/animations";
 
 })
 export class GreetingComponent implements OnInit {
+  activeLang;
   greeting= {
     username: "Klai Ghassen",
     title: "Hi all, I'm Ghassen",
@@ -51,6 +52,8 @@ export class GreetingComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    this.activeLang = localStorage.getItem('lang') || 'en';
+
   }
 
   windowResume(){

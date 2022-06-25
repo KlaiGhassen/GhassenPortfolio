@@ -18,8 +18,10 @@ export class SkillsComponent implements OnInit {
     ]
   };
   constructor() { }
-
+  activeLang
   ngOnInit(): void {
+    this.activeLang = localStorage.getItem('lang') || 'en';
+
   }
 
 }

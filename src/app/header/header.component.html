@@ -2,7 +2,7 @@
   <header class="header" wmAnimate="landing" aos speed="normal">
     <a href="" class="logo">
       <span class="grey-color"> &lt;</span>
-      <span class="logo-name">{{ greeting.username | translate }}</span>
+      <span class="logo-name">{{ greeting.username }}</span>
       <span class="grey-color">/&gt;</span>
     </a>
     <input class="menu-btn" type="checkbox" id="menu-btn" />
@@ -53,20 +53,20 @@
         <a 
         matTooltip="navigate to About Me"
 
-        href="#skills">About</a>
+        href="#skills">{{ "About" | translate }}</a>
       </li>
       <li>
         <a 
         matTooltip="navigate to Skills"
 
-        href="#skills">Skills</a>
+        href="#skills">{{"Skills" | translate }}</a>
       </li>
       <li>
         <a 
         
         matTooltip="navigate to Education"
 
-        href="#education">Education</a>
+        href="#education">{{"Education"| translate }}</a>
       </li>
       <!-- <li>
         <a href="#projects">Projects</a>
@@ -75,13 +75,13 @@
         <a
         matTooltip="navigate to Experiences"
 
-        href="#experience">Experiences</a>
+        href="#experience">{{"Experiences"| translate }}</a>
       </li>
       <li>
         <a 
         matTooltip="navigate to ContactMe"
 
-        href="#contact">Contact Me</a>
+        href="#contact">{{"Contact Me" | translate}}</a>
       </li>
     </ul>
   </header>

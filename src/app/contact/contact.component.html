@@ -2,8 +2,8 @@
 <div class="main contact-margin-top" id="contact" wmAnimate="jackInTheBox"  speed="normal">
   <div class="contact-div-main">
     <div class="contact-header">
-      <h1 class="heading contact-title">{{contactInfo.title}}</h1>
-      <p class="subTitle contact-subtitle">{{contactInfo.subtitle}}</p>
+      <h1 class="heading contact-title">{{contactInfo.title | translate}}</h1>
+      <p class="subTitle contact-subtitle">{{contactInfo.subtitle |translate}}</p>
       <div class="contact-text-div">
         <a class="contact-detail" href="{{'tel:'+ contactInfo.number}}">{{contactInfo.number}}</a>
         <br><br>
