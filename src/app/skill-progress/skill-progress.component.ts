@@ -18,10 +18,10 @@ export class SkillProgressComponent implements OnInit {
         Stack: "Backend",
         progressPercentage: "73%"
       },
-      {
-        Stack: "Mobile Development",
-        progressPercentage: "75%"
-      },
+      // {
+      //   Stack: "Mobile Development",
+      //   progressPercentage: "75%"
+      // },
       {
         Stack: "Programming",
         progressPercentage: "79%"

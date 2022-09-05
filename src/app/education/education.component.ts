@@ -25,7 +25,7 @@ export class EducationComponent implements OnInit {
     },
     {
       heading: "iset University - Computer Science development information system ",
-      duration: "2020 2016",
+      duration: "2020 2017",
       subtitle: "Iset Kef University",
       content: "Successfully completed my license studies in 2020 from 2016 \n" ,
       className1: "mar-left",

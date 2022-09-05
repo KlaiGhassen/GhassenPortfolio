@@ -1,5 +1,5 @@
 <div>
-  <header class="header" wmAnimate="landing" aos speed="normal">
+  <header class="header" >
     <a href="" class="logo">
       <span class="grey-color"> &lt;</span>
       <span class="logo-name">{{ greeting.username }}</span>
@@ -14,7 +14,6 @@
         <!-- Button -->
         <button 
         matTooltip="Change language "
-
         [matMenuTriggerFor]="languages">
           <ng-container
             *ngTemplateOutlet="flagImage; context: { $implicit: activeLang }"

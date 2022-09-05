@@ -1,8 +1,6 @@
 .prt_about_edulearn_wrapper {
   display: inline-block;
   width: 100%;
-  margin-top: 7rem;
-  margin-bottom: 7rem;
   //animation: fade_up 2s 4s;
 }
 .timeline-heading{
@@ -293,6 +291,7 @@
 
 .prt_about_learnbox_left:hover .prt_about_learnbox_year h1,
 .prt_about_learnbox_right:hover .prt_about_learnbox_year h1 {
+  cursor: pointer;
   color: #6c63ff;
   -webkit-transition: all .3s;
   -moz-transition: all .3s;

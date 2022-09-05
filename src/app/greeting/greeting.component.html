@@ -8,14 +8,14 @@
           <span class="wave-emoji">👋</span>
         </h1>
         <p  class="greeting-text-p subTitle" >{{greeting.subTitle | translate}}</p>
-            <app-social-media></app-social-media>
+            <!-- <app-social-media></app-social-media> -->
         <div class="button-greeting-div">
 <!--        button-->
           <div>
-            <a class="main-button" href="#contact">{{"Contact Me" | translate}}</a>
+            <a class="main-button glow-on-hover" href="#contact">{{"Contact Me" | translate}}</a>
           </div>
           <div>
-            <button class="main-button" (click)="windowResume()">{{"See my resume"| translate }}</button>
+            <button class="main-button glow-on-hover" (click)="windowResume()">{{"See my resume"| translate }}</button>
           </div>
 <!--          <Button text="Contact me" href="#contact" />-->
 <!--          <Button text="See my resume" newTab={true} href={greeting.resumeLink} />-->

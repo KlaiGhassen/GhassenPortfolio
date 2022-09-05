@@ -72,11 +72,10 @@ export class HeaderComponent implements OnInit {
       id: 'fr',
       label: 'French',
     },
-
-    {
-      id: 'ar',
-      label: 'العربية',
-    },
+    // {
+    //   id: 'ar',
+    //   label: 'العربية',
+    // },
   ];
   activeLang;
   constructor(private translate: TranslateService) {}
