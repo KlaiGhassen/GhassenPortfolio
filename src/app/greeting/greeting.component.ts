@@ -47,7 +47,7 @@ export class GreetingComponent implements OnInit {
     username: "Klai Ghassen",
     title: "Hi all, I'm Ghassen",
     subTitle: "A passionate Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Angular2 / Nodejs and some other cool libraries and frameworks. ",
-    resumeLink: "https://drive.google.com/file/d/1cagLnV39uhCUA_URB8Tf7sXrAU7hOzKE/view?usp=sharing"
+    resumeLink: "https://drive.google.com/file/d/1R41GTjnOZE-Q1q-XQlp5CINBVzyTqvqc/view?usp=sharing"
   }
   constructor() { }
 
